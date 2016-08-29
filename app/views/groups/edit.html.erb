@@ -2,23 +2,6 @@
     <h2>编辑组织信息</h2>
 
     <hr>
-    <%= form_for @group do |f| %>
-    <% if @group.errors.any? %>
-    <ul>
-      <% @group.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
-    <% end %>
-    名称
-    <%= f.text_field :title %>
-    <br>
-    描述
-    <br>
-    <%= f.text_area :description %>
-    <br>
 
-    <%= f.submit "提交", :disable_with => '正在处理...' %>
-    <% end %>
-
+    <%= render "form" %>
 </div>
