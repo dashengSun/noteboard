@@ -5,4 +5,5 @@ Ruby on Rails 基础学习.
 
 # Run
 bundle install
+
 rails s
